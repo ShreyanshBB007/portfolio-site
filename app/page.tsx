@@ -131,18 +131,22 @@ export default function Home() {
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white pt-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: "spring", stiffness: 260, damping: 20 }}
-              className="w-32 h-32 mx-auto mb-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-4xl font-bold text-white"
-            >
-              SB
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <motion.div
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  transition={{ delay: 0.2, type: "spring", stiffness: 260, damping: 20 }}
+  className="mx-auto mb-8 shadow-xl border-4 border-white rounded-lg overflow-hidden max-w-[250px]"
+>
+  <img
+    src="/profile-photo.jpg"
+    alt="Shreyansh Bhagwat"
+    className="object-contain h-auto w-full mx-auto hover:scale-105 transition-transform duration-300"
+  />
             </motion.div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
               Shreyansh Bhagwat
