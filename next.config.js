@@ -1,8 +1,7 @@
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed output: 'export' to allow Vercel to generate required manifests (routes-manifest.json)
-  trailingSlash: true,
+    output: 'export',
   images: {
     unoptimized: true,
   },
