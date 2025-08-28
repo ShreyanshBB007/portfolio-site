@@ -11,6 +11,18 @@
   
   body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    /* Dark modern gradient: deep navy/black base with blue depth and subtle orange + soft white accents */
+    background:
+      radial-gradient(circle at 82% 78%, rgba(255,255,255,0.10), transparent 60%),
+      linear-gradient(135deg,#0b0f19 0%, #0e1624 30%, #11293f 55%, #1e3a8a 85%);
+    background-color: #0b0f19; /* solid fallback */
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    color: #f1f5f9;
+  }
+  @media (prefers-color-scheme: light) {
+    body { color: #0f172a; }
   }
 }
 
@@ -22,6 +34,11 @@
   .text-balance {
     text-wrap: balance;
   }
+  .glass-panel {
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(12px) saturate(140%);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+  }
 }
 
 /* Custom scrollbar */
@@ -30,7 +47,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #79bd5e;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {

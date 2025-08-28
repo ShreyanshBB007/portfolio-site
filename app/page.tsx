@@ -129,7 +129,7 @@ export default function Home() {
       </motion.nav>
 
       {/* Home Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white pt-20">
+  <section id="home" className="min-h-screen flex items-center justify-center pt-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -140,7 +140,7 @@ export default function Home() {
   initial={{ scale: 0 }}
   animate={{ scale: 1 }}
   transition={{ delay: 0.2, type: "spring", stiffness: 260, damping: 20 }}
-  className="mx-auto mb-8 shadow-xl border-4 border-white rounded-lg overflow-hidden max-w-[250px]"
+  className="mx-auto mb-8 shadow-xl border-4 border-yellow-400/90 rounded-lg overflow-hidden max-w-[250px] ring-2 ring-offset-2 ring-offset-black/30 ring-amber-500/60"
 >
   <img
     src="/profile-photo.jpg"
@@ -148,36 +148,36 @@ export default function Home() {
     className="object-contain h-auto w-full mx-auto hover:scale-105 transition-transform duration-300"
   />
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6">
               Shreyansh Bhagwat
             </h1>
-            <p className="text-xl md:text-2xl text-primary-600 mb-8 font-medium">
+            <p className="text-xl md:text-2xl text-yellow-400 mb-8 font-medium">
               Aspiring AI/ML Engineer | Exploring Fullstack Development | Data Science Enthusiast
             </p>
-            <p className="text-lg text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
               I am a Computer Science and Engineering student with a focus on AI/ML, Data Science, and web development. 
               Passionate about using technology to solve real-world problems, I apply my skills in programming, data analysis, 
               machine learning, and web development to contribute to innovative solutions.
             </p>
             <div className="flex gap-6 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => scrollToSection('projects')}
-                className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
-              >
-                View Projects
-              </motion.button>
+            <motion.button
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={() => scrollToSection('projects')}
+                            className="border-2 border-yellow-500 text-yellow-500 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-50 transition-colors"
+                          >
+                            View Projects
+                          </motion.button>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="py-20 bg-white">
+  <section id="resume" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div {...fadeInUp}>
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Resume</h2>
+            <h2 className="text-4xl font-bold text-center text-slate-100 mb-16">Resume</h2>
             <div className="text-center mb-12">
               <motion.a
                 href="/resume.pdf"
@@ -195,28 +195,28 @@ export default function Home() {
                 whileHover={{ y: -5 }}
                 className="bg-gray-50 p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Education</h3>
-                <p className="text-gray-700">BTech CSE (AIML) - 8.96 CGPA</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Education</h3>
+                <p className="text-slate-700">BTech CSE (AIML) - 8.96 CGPA</p>
                 <p className="text-gray-600 text-sm">Shri Ramdeobaba College</p>
-                <p className="text-gray-700">HSC - 81%</p>
+                <p className="text-slate-700">HSC - 81%</p>
                 <p className="text-gray-600 text-sm">St. Paul Jr. College</p>
-                <p className="text-gray-700">SSC - 91%</p>
+                <p className="text-slate-700">SSC - 91%</p>
                 <p className="text-gray-600 text-sm">Montfort Sr. Sec. School</p>
               </motion.div>
               <motion.div
                 whileHover={{ y: -5 }}
                 className="bg-gray-50 p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Focus Areas</h3>
-                <p className="text-gray-700">Artificial Intelligence, Machine Learning, Data Analytics</p>
-                <p className="text-gray-700">Deep Learning, NLP, LLMs, Web Development</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Focus Areas</h3>
+                <p className="text-slate-700">Artificial Intelligence, Machine Learning, Data Analytics</p>
+                <p className="text-slate-700">Deep Learning, NLP, LLMs, Web Development</p>
               </motion.div>
               <motion.div
                 whileHover={{ y: -5 }}
                 className="bg-gray-50 p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Certifications</h3>
-                <p className="text-gray-700">4 Coursera Certifications</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Certifications</h3>
+                <p className="text-slate-700">4 Coursera Certifications</p>
                 <p className="text-gray-600 text-sm">Data Analytics & SQL</p>
               </motion.div>
             </div>
@@ -225,10 +225,10 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50">
+  <section id="skills" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div {...fadeInUp}>
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Technical Skills</h2>
+            <h2 className="text-4xl font-bold text-center text-slate-100 mb-16">Technical Skills</h2>
             <motion.div 
               variants={staggerChildren}
               initial="initial"
@@ -245,13 +245,13 @@ export default function Home() {
                   className="bg-white p-6 rounded-xl shadow-sm text-center group hover:shadow-lg transition-all"
                 >
                   <skill.icon className={`w-10 h-10 mx-auto mb-3 ${skill.color} group-hover:scale-110 transition-transform`} />
-                  <p className="text-sm font-medium text-gray-700">{skill.name}</p>
+                  <p className="text-sm font-medium text-slate-800">{skill.name}</p>
                 </motion.div>
               ))}
             </motion.div>
             <div className="mt-12 grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Areas of Expertise</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Areas of Expertise</h3>
                 <div className="flex flex-wrap gap-3">
                   {['AI/ML', 'Deep Learning', 'NLP', 'Neural Networks', 'LLMs', 'Data Science'].map((area) => (
                     <span key={area} className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
@@ -261,7 +261,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Cloud & Tools</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">Cloud & Tools</h3>
                 <p className="text-gray-700">Oracle Cloud Infrastructure for data analytics, Git & GitHub for version control, Docker for containerization</p>
               </div>
             </div>
@@ -270,10 +270,10 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white">
+  <section id="projects" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div {...fadeInUp}>
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Projects</h2>
+            <h2 className="text-4xl font-bold text-center text-slate-100 mb-16">Projects</h2>
             <div className="grid lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <motion.div
@@ -295,7 +295,7 @@ export default function Home() {
                     ></iframe>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
                     <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((tech) => (
@@ -321,16 +321,16 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-gray-50">
+  <section id="education" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div {...fadeInUp}>
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Education</h2>
+            <h2 className="text-4xl font-bold text-center text-slate-100 mb-16">Education</h2>
             <div className="space-y-8">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 className="bg-white p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">BTech Computer Science & Engineering (AI/ML)</h3>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">BTech Computer Science & Engineering (AI/ML)</h3>
                 <p className="text-primary-600 font-semibold mb-2">Shri Ramdeobaba College of Engineering and Management</p>
                 <p className="text-gray-600 mb-2">2023 – 2027</p>
                 <p className="text-lg font-semibold text-green-600">CGPA: 8.96 (till Sem III)</p>
@@ -339,7 +339,7 @@ export default function Home() {
                 whileHover={{ scale: 1.02 }}
                 className="bg-white p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Higher Secondary Certificate (HSC)</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Higher Secondary Certificate (HSC)</h3>
                 <p className="text-primary-600 font-semibold mb-2">St. Paul Jr. College</p>
                 <p className="text-gray-600 mb-2">2021 – 2023</p>
                 <p className="text-lg font-semibold text-green-600">81%</p>
@@ -348,7 +348,7 @@ export default function Home() {
                 whileHover={{ scale: 1.02 }}
                 className="bg-white p-8 rounded-xl shadow-sm"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Secondary School Certificate (SSC)</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Secondary School Certificate (SSC)</h3>
                 <p className="text-primary-600 font-semibold mb-2">Montfort Sr. Sec. School</p>
                 <p className="text-gray-600 mb-2">2015 – 2021</p>
                 <p className="text-lg font-semibold text-green-600">91%</p>
@@ -359,10 +359,10 @@ export default function Home() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-white">
+  <section id="certifications" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div {...fadeInUp}>
-            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Certifications</h2>
+            <h2 className="text-4xl font-bold text-center text-slate-100 mb-16">Certifications</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
                 <motion.div
